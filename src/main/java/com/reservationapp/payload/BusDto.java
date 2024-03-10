@@ -24,6 +24,4 @@ public class BusDto {
     private int  totalSeat;
     private int availableSeat;
 
-    private RouteDto route;
-    private List<SubRouteDto> subRoutes;
 }

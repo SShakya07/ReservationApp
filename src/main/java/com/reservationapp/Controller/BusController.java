@@ -1,22 +1,23 @@
 package com.reservationapp.Controller;
 
+import com.reservationapp.Entity.Route;
+import com.reservationapp.Repository.RouteRepository;
 import com.reservationapp.Service.BusService;
 import com.reservationapp.payload.BusDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/bus")
 public class BusController {
+    @Autowired
+    private RouteRepository routeRepository;
     @Autowired
     private BusService busService;
 
@@ -31,4 +32,5 @@ public class BusController {
         return new ResponseEntity<>("Bus Detail Added", HttpStatus.CREATED);
 
     }
+
 }

@@ -15,4 +15,5 @@ public class RouteDto {
     private String totalDuration;
     private String fromTime;
     private String toTime;
+    private long busId;
 }

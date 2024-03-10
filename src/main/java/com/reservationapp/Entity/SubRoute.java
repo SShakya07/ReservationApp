@@ -21,9 +21,12 @@ public class SubRoute {
     private String fromTime;
     private String toTime;
 
-    @ManyToOne
-    @JoinColumn(name="route_id")
-    private Route route;
+    @Column(name="route_Id",nullable = false)
+    private long routeId;
+
+//    @ManyToOne
+//    @JoinColumn(name="route_id")
+//    private Route route;
 
 
 }
