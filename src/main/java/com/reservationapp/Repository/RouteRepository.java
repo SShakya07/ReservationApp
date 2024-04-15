@@ -10,4 +10,5 @@ public interface RouteRepository extends JpaRepository<Route,Long> {
    // List<Route> findByFromLocationAndToLocationAndFromDate(String fromLocation , String toLocation, String fromDate);
 
     Route findByBusId(long busId);
+    List<Route> findByFromLocationAndToLocationAndFromDate(String fromLocation, String toLocation, String fromDate);
 }

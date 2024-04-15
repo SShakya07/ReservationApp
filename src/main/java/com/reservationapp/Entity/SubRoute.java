@@ -1,9 +1,11 @@
 package com.reservationapp.Entity;
 
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 @Entity
 @NoArgsConstructor
@@ -23,6 +25,7 @@ public class SubRoute {
 
     @Column(name="route_Id",nullable = false)
     private long routeId;
+    private long busId;
 
 //    @ManyToOne
 //    @JoinColumn(name="route_id")

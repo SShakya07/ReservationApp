@@ -1,6 +1,5 @@
 package com.reservationapp.payload;
 
-import jakarta.persistence.Lob;
 
 public class UserRegistrationDto {
     private long id;
